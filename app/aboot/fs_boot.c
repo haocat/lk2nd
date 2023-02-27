@@ -9,7 +9,9 @@
 
 #include "fs_boot.h"
 
-struct fs_boot_data fs_boot_data;
+struct fs_boot_data fs_boot_data = {
+	.rproc_mode = RPROC_MODE_NO_MODEM
+};
 
 static const char *bootable_parts[] = {
 	"system",
